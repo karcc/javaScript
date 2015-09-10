@@ -5,4 +5,20 @@
 //exceed four million, find the sum of the even-valued terms.
 
 
-var fibSeq = 1
+var n1 = 1;
+var n2 = 2;
+var sum = 0;
+var sumEven = 2;
+
+var fibSeq = function (n){
+	while(n2 < n){
+		sum = n1 + n2;
+		if (sum%2 === 0){
+			sumEven += sum;
+		}
+		n1 = n2;
+		n2 = sum;
+	}
+	return sumEven;
+};
+console.log (fibSeq(4000000))
