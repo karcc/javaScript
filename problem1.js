@@ -1,8 +1,10 @@
-var sumOfMultiples = function totalSum() {
-    for (var i = 0; i < 1001; i++) {
+// solution 1, tested on repl.it
+
+var totalSum = 0;
+for (var i = 0; i < 1000; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
-            sum +=i;
+            totalSum +=i;
+        
         }
-        return sum;
-    };
-    console.log(sumOfMultiples());
+    }
+    console.log(totalSum);
